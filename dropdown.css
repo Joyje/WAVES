@@ -1,0 +1,81 @@
+/*
+.dropdown {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.dropdown a {
+  min-width: 100%;
+  display: inline-block;
+}
+.dropdownToggle {
+  padding: 9px;
+  box-sizing: border-box;
+}
+.dropdown:hover .dropdownToggle {
+  background-color: var(--borderHighlight);
+}
+.dropdownContent {
+  min-width: 100%;
+  display: none;
+  position: absolute;
+  background-color: var(--menuColor);
+}
+.dropdown:hover .dropdownContent {
+  display: block;
+}
+.dropdownContent div {
+  min-width: 100%;
+  display: inline-block;
+  text-align: center;
+  border-bottom: 1px solid var(--borderColor);
+}
+.dropdownContent div:hover {
+  background-color: var(--borderHighlight);
+}
+*/
+.dropdown {
+	padding: 0;
+	display: inline-block;
+}
+
+/* Dropdown buttons */
+.dropbtn {
+	background-color: #3498DB;
+	margin: 0;
+	border: none;
+	padding: 10px;
+}
+.dropbtn:hover, .dropbtn:focus {background-color: #2980B9; cursor: pointer;}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+	display: none;
+	position: absolute;
+	max-width: 100%;
+	max-height: 5.5em;
+	background: #FFFFFF;
+	box-shadow: 0em 1em 1em 0em rgba(0,0,0,0.2);
+	padding: 0;
+	z-index: 3;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+/* Buttons inside the dropdown */
+.dropdown-content button {
+	width: 100%;
+	background-color: #2980B9;
+	padding: 10px;
+	text-decoration: none;
+	display: block;
+}
+.dropdown-content button:hover {background-color: #3498DB; cursor: pointer;}
+
+.coc {z-index: 4;}
+/* JS adds this class to the .dropdown-content container when apropriate) */
+.show {display:block;}
+.hide {display:none;}
+
+/* scroll to select slide value */
+#numberOfTones {display: inline-block; vertical-align: middle; overflow: hidden; height: 2.1em;}
